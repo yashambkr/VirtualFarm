@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">VirtualFarm</string>
+    <string name="temperature">Temperature :</string>
+    <string name="humidity">Humidity :</string>
+    <string name="sensor_output">Sensor Output</string>
+    <string name="applogo">applogo</string>
+    <string name="page2bg">page2bg</string>
+    <string name="virtualfarm">VirtualFarm</string>
+    <string name="sensors_output">sensors output</string>
+    <string name="temperature1">temperature</string>
+    <string name="humidity1">Humidity</string>
+    <string name="templogo">templogo</string>
+    <string name="humlogo">humlogo</string>
+    <string name="advanced_agriculture_using_iot">Advanced Agriculture Using IoT</string>
+    <string name="start">START</string>
+    <string name="temperature3">Temperature</string>
+    <string name="frontpg">frontpg</string>
+    <string name="welcome_message">Welcome To VIRTUAL FARM</string>
+    <string name="tube_water_level">Tube Water Level</string>
+    <string name="cardimage">cardimage</string>
+    <string name="temlogo">temlogo</string>
+    <string name="_0">0</string>
+    <string name="temperature4">Temperature</string>
+    <string name="tank_water_level">Tank water level</string>
+
+</resources>

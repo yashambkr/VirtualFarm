@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "326388512513",
+    "firebase_url": "https://virtualfarm2020-default-rtdb.firebaseio.com",
+    "project_id": "virtualfarm2020",
+    "storage_bucket": "virtualfarm2020.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326388512513:android:48e6166b0e20bb90f48d00",
+        "android_client_info": {
+          "package_name": "com.example.virtualfarm2020"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "326388512513-nvrsab88ocgr39r22km4j1so1m370bqe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_5pYqt61rhh0jDaQAZ3_Rei-CV2MDlaY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "326388512513-nvrsab88ocgr39r22km4j1so1m370bqe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
