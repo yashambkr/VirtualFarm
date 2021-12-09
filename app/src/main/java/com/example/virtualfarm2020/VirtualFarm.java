@@ -7,12 +7,12 @@ import android.view.View;
 import android.widget.Toast;
 
 
-public class MainActivity extends Activity {
+public class VirtualFarm extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_splash_screen);
     }
 
     public void displayToast(String message) {
@@ -21,7 +21,7 @@ public class MainActivity extends Activity {
 
     public void openActivity2(View view) {
         displayToast(getString(R.string.welcome_message));
-        Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+        Intent intent = new Intent(VirtualFarm.this, HomeScreen.class);
         startActivity(intent);
     }
 
