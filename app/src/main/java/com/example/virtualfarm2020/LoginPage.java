@@ -24,7 +24,7 @@ public class LoginPage extends AppCompatActivity {
         setContentView(R.layout.login_page);
 
         systemId = findViewById(R.id.sys_id);
-        user = findViewById(R.id.username);
+        user = findViewById(R.id.Username);
         passwordE = findViewById(R.id.password);
         Button loginbtn = (Button) findViewById(R.id.SigninBtn);
         databaseReference = FirebaseDatabase.getInstance().getReference().child("System1");
