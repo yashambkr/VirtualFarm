@@ -11,16 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.VirtualFarm2020">
-
         <activity
-            android:name=".HomeScreen"
+            android:name=".MainDashboard"
             android:exported="false"
-            />
-        <!--To Remove the ugly App Bar with Title from the application-->
-        <activity android:name=".LoginPage"
-            android:exported="false"
-
             android:theme="@style/AppTheme.NoActionBar"/>
+        <!-- To Remove the ugly App Bar with Title from the application -->
+        <activity
+            android:name=".LoginPage"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SplashScreen"
             android:theme="@style/AppTheme.NoActionBar">
@@ -31,8 +30,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
     </application>
 
 </manifest>

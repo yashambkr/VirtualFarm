@@ -1,5 +1,7 @@
 package com.example.virtualfarm2020;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -28,6 +30,8 @@ public class LoginPage extends AppCompatActivity {
         passwordE = findViewById(R.id.password);
         Button loginbtn = (Button) findViewById(R.id.SigninBtn);
         databaseReference = FirebaseDatabase.getInstance().getReference().child("System1");
+
+
         loginbtn.setOnClickListener(view -> {
             try{
                 databaseReference.addValueEventListener(new ValueEventListener(){
@@ -42,13 +46,17 @@ public class LoginPage extends AppCompatActivity {
                         String userId = user.getText().toString();
                         String password = passwordE.getText().toString();
 
+
+
                         if(sysID.equals(sysId) && userID.equals(userId) && pass.equals(password)){
-                            Toast.makeText(getApplicationContext(), "LoginSuccess",Toast.LENGTH_LONG).show();
+                                openDashboard(findViewById(R.id.SigninBtn));
                         }
                         else{
                             Toast.makeText(getApplicationContext(), "Failed",Toast.LENGTH_LONG).show();
 
                         }
+
+
 
                     }
 
@@ -60,8 +68,14 @@ public class LoginPage extends AppCompatActivity {
             }catch (Exception e){
                 Toast.makeText(getApplicationContext(), "Success",Toast.LENGTH_LONG).show();
             }
+
         });
 
+
+    }
+    public void openDashboard(View view){
+        Intent i = new Intent(this, MainDashboard.class);
+        startActivity(i);
 
     }
 }
