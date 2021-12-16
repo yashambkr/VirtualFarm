@@ -1,14 +1,19 @@
 package com.example.virtualfarm2020;
+
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -20,6 +25,7 @@ import java.util.Objects;
 public class LoginPage extends AppCompatActivity {
     DatabaseReference databaseReference;
     EditText systemId, user,passwordE;
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,6 +79,8 @@ public class LoginPage extends AppCompatActivity {
 
 
     }
+
+
     public void openDashboard(View view){
         Intent i = new Intent(this, MainDashboard.class);
         startActivity(i);
