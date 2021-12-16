@@ -78,4 +78,5 @@ public class LoginPage extends AppCompatActivity {
         startActivity(i);
 
     }
+
 }

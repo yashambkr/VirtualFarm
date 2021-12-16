@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroud_shape_purple"
+    android:background="@drawable/login_page_background"
     android:orientation="vertical"
     tools:context=".MainDashboard">
 
@@ -37,7 +37,7 @@
                     android:id="@+id/tempicon"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:layout_alignParentLeft="true"
+
                     android:src="@drawable/temperatureicon" />
 
                 <TextView
@@ -62,7 +62,6 @@
                     android:id="@+id/HumidityImage"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:layout_alignParentRight="true"
                     android:layout_marginStart="190dp"
                     android:paddingRight="32dp"
                     android:src="@drawable/humidityicon" />
@@ -210,6 +209,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/wtrMngmnt"
+            android:clickable="true"
+            android:onClick="openScreen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/thirdRow"

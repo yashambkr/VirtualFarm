@@ -12,10 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VirtualFarm2020">
         <activity
+            android:name=".GraphActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainDashboard"
             android:exported="false"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <!-- To Remove the ugly App Bar with Title from the application -->
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- To Remove the ugly App Bar with Title from the application -->
         <activity
             android:name=".LoginPage"
             android:exported="false"

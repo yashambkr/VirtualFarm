@@ -2,7 +2,9 @@ package com.example.virtualfarm2020;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class MainDashboard extends AppCompatActivity {
@@ -15,6 +17,10 @@ public class MainDashboard extends AppCompatActivity {
 
     }
 
+    public void openScreen(View view){
+        Intent i = new Intent(this, GraphActivity.class);
+        startActivity(i);
+    }
 
 
 
