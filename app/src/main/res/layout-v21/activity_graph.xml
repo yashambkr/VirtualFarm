@@ -10,7 +10,7 @@
         xmlns:chart="http://schemas.android.com/apk/res-auto"
         android:id="@+id/pHLineChart"
         android:layout_width="match_parent"
-        android:layout_height="450dp"
+        android:layout_height="400dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
@@ -45,7 +45,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:text="Default pH is 7. Change pH value here"
-            android:textColor="#5A5A5A"
+            android:textColor="#616161"
             android:textSize="17sp" />
 
         <LinearLayout
@@ -62,7 +62,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="0dp"
                 android:text="pH"
-                android:textColor="#2B2B2B"
                 android:textSize="28sp" />
 
             <EditText
@@ -71,9 +70,9 @@
                 android:layout_height="48dp"
                 android:layout_marginStart="100dp"
                 android:hint="Add pH"
-                android:textColorHint="#616161"
+                android:hintTextColor="#616161"
                 android:inputType="numberDecimal"
-                tools:ignore="Autofill,TextContrastCheck" />
+                tools:ignore="Autofill" />
         </LinearLayout>
 
         <Button
@@ -86,7 +85,6 @@
             android:minHeight="48dp"
             android:padding="5dp"
             android:text="Change"
-            android:textColor="@color/white"
             android:textAllCaps="false"
             android:textSize="21sp"
             app:layout_constraintBottom_toBottomOf="@id/pHLinearLayout"
