@@ -2,13 +2,13 @@ plugins {
     id 'com.android.application'
 }
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
     buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "com.example.virtualfarm2020"
         minSdkVersion 19
-        targetSdkVersion 30
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
 
@@ -39,11 +39,11 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics'
     implementation 'com.google.firebase:firebase-database:20.0.3'
     implementation 'com.google.firebase:firebase-auth:21.0.1'
-    implementation 'com.google.firebase:firebase-core:20.0.1'
+    implementation 'com.google.firebase:firebase-core:20.0.2'
 
     //added
     implementation 'com.google.android.material:material:1.4.0'
-    implementation 'com.diogobernardino:williamchart:2.2'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 }
 
 apply plugin: 'com.android.application'
