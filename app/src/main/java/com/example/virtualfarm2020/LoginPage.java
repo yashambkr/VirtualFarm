@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -24,7 +23,7 @@ import java.util.Objects;
 
 public class LoginPage extends AppCompatActivity {
     DatabaseReference databaseReference;
-    EditText systemId, user,passwordE;
+    TextInputEditText systemId, user,passwordE;
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +33,7 @@ public class LoginPage extends AppCompatActivity {
         systemId = findViewById(R.id.sys_id);
         user = findViewById(R.id.Username);
         passwordE = findViewById(R.id.password);
-        Button loginbtn = (Button) findViewById(R.id.SigninBtn);
+        Button loginbtn = findViewById(R.id.SigninBtn);
         databaseReference = FirebaseDatabase.getInstance().getReference().child("System1");
 
 
@@ -52,8 +51,6 @@ public class LoginPage extends AppCompatActivity {
                         String userId = user.getText().toString();
                         String password = passwordE.getText().toString();
 
-
-
                         if(sysID.equals(sysId) && userID.equals(userId) && pass.equals(password)){
                                 openDashboard(findViewById(R.id.SigninBtn));
                         }
@@ -61,8 +58,6 @@ public class LoginPage extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(), "Failed",Toast.LENGTH_LONG).show();
 
                         }
-
-
 
                     }
 
@@ -80,11 +75,13 @@ public class LoginPage extends AppCompatActivity {
 
     }
 
-
     public void openDashboard(View view){
         Intent i = new Intent(this, MainDashboard.class);
         startActivity(i);
 
     }
+
+    // Get input text
+
 
 }
