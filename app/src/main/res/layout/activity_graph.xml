@@ -6,27 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".GraphActivity">
 
-    <com.db.chart.view.LineChartView
+    <com.github.mikephil.charting.charts.LineChart
         xmlns:chart="http://schemas.android.com/apk/res-auto"
         android:id="@+id/pHLineChart"
         android:layout_width="match_parent"
-        android:layout_height="450dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="#78EF9A"
+        android:layout_height="400dp"
+        android:layout_margin="10dp"
+        android:background="#A0F1B7"
         android:paddingLeft="10dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        chart:chart_axisBorderSpacing="0dp"
-        chart:chart_axisColor="@android:color/white"
-        chart:chart_labelColor="@android:color/white"
         chart:layout_constraintEnd_toEndOf="parent"
         chart:layout_constraintStart_toStartOf="parent"
-        chart:layout_constraintTop_toTopOf="parent"
-        app:chart_smoothLine="true"/>
+        chart:layout_constraintTop_toTopOf="parent"/>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/pHCard"

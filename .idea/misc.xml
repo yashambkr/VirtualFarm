@@ -27,6 +27,9 @@
         <entry key="..\:/VirtualFarm1/app/src/main/res/layout/activity_graph.xml" value="0.152" />
         <entry key="..\:/VirtualFarm1/app/src/main/res/layout/activity_main_dashboard.xml" value="0.2" />
         <entry key="..\:/VirtualFarm1/app/src/main/res/layout/login_page.xml" value="0.2" />
+        <entry key="app/src/main/res/layout-v21/activity_graph.xml" value="0.27309782608695654" />
+        <entry key="app/src/main/res/layout/activity_graph.xml" value="0.27309782608695654" />
+        <entry key="app/src/main/res/layout/login_page.xml" value="0.19739583333333333" />
       </map>
     </option>
   </component>
