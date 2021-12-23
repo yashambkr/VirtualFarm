@@ -13,7 +13,8 @@
         android:theme="@style/Theme.VirtualFarm2020">
         <activity
             android:name=".GraphActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".MainDashboard"
             android:exported="false"

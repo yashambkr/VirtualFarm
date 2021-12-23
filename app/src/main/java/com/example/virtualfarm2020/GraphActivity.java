@@ -18,7 +18,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class GraphActivity extends AppCompatActivity {
     LineChart lineChart;
@@ -52,8 +51,12 @@ public class GraphActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 ArrayList<Entry> dataVal= new ArrayList<>();
                 if(snapshot.hasChildren()){
-                    DataPoint dp= snapshot.child("pH").getValue(DataPoint.class);
-                    dataVal.add(new Entry(Objects.requireNonNull(dp).getTs(), dp.getpH()));
+//                    DataPoint dp= snapshot.child("pH").getValue(DataPoint.class);
+//                    dataVal.add(new Entry(Objects.requireNonNull(dp).getTs(), dp.getpH()));
+                    float ph= Float.parseFloat(String.valueOf(snapshot.child("pH").getValue()));
+                    //String currentTime = new SimpleDateFormat("HH:mm a", Locale.getDefault()).format(new Date());
+                    float ts= System.currentTimeMillis()/(1000*360);
+                    dataVal.add(new Entry(ts,ph));
                     showChart(dataVal);
                 }else{
                     lineChart.clear();
