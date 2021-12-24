@@ -13,8 +13,7 @@
         android:theme="@style/Theme.VirtualFarm2020">
         <activity
             android:name=".GraphActivity"
-            android:exported="false"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:exported="false" />
         <activity
             android:name=".MainDashboard"
             android:exported="false"
@@ -27,8 +26,10 @@
             android:name=".SplashScreen"
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true">
-            android:screenOrientation="portrait" > <intent-filter>
+            android:screenOrientation="portrait">
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

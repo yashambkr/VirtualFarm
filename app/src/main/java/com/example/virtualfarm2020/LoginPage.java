@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -22,7 +23,7 @@ import java.util.Objects;
 
 public class LoginPage extends AppCompatActivity {
     DatabaseReference databaseReference;
-    EditText systemId, user,passwordE;
+    TextInputEditText systemId, user,passwordE;
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,5 +80,8 @@ public class LoginPage extends AppCompatActivity {
         startActivity(i);
 
     }
+
+    // Get input text
+
 
 }

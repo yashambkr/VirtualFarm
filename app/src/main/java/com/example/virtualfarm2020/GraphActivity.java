@@ -74,7 +74,7 @@ public class GraphActivity extends AppCompatActivity {
     private void showChart(ArrayList<Entry> dataVal) {
         lineDataSet.setValues(dataVal);
         lineDataSet.setLabel("pH");
-        iLineDataSets.clear();
+       // iLineDataSets.clear();
         iLineDataSets.add(lineDataSet);
         lineData= new LineData(iLineDataSets);
         lineChart.clear();
