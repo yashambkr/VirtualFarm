@@ -22,5 +22,7 @@
     <string name="_0">0</string>
     <string name="temperature4">Temperature</string>
     <string name="tank_water_level">Tank water level</string>
+    <string name="username">Username</string>
+    <string name="systemID">System ID</string>
 
 </resources>
