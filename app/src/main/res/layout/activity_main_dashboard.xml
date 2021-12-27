@@ -216,8 +216,7 @@
             android:layout_below="@+id/thirdRow"
             android:layout_marginTop="16dp"
             app:cardElevation="8dp"
-            app:cardCornerRadius="8dp"
-            >
+            app:cardCornerRadius="8dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
