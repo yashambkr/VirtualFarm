@@ -2,6 +2,7 @@ package com.example.virtualfarm2020;
 
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -66,7 +67,7 @@ public class GraphActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
+                Toast.makeText(getBaseContext(), "Failed to load", Toast.LENGTH_SHORT).show();
             }
         });
     }
