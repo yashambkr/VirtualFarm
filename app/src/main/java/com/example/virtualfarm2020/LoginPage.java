@@ -21,8 +21,10 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.Objects;
 
 public class LoginPage extends AppCompatActivity {
+
+
     DatabaseReference databaseReference;
-    TextInputEditText systemId, user,passwordE;
+    TextInputEditText systemId,user, passwordE;
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {

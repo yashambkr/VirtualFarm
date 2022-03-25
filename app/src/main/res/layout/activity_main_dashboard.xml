@@ -1,232 +1,247 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_page_background"
-    android:orientation="vertical"
+    android:gravity="center"
     tools:context=".MainDashboard">
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="340dp"
+        android:layout_height="640dp"
+        android:elevation="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#FFFBFB">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp">
-
-
-        <!-- First Row -->
         <androidx.cardview.widget.CardView
-            android:id="@+id/firstrow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="fill"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="8dp"
-            app:cardUseCompatPadding="true">
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:elevation="30dp"
+            app:cardCornerRadius="20dp">
+            <TextView
+                android:id="@+id/LightStatusTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Light Status"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+                android:id="@+id/LightStatusValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="30dp"
+                android:hint="ON"
+                android:textSize="25dp"
+                >
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="190dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="290dp"
+            android:elevation="30dp"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/TDSTextView"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Nutrients"
+                    android:textAlignment="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/TDSValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TDSTextView"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="35"
+                    android:textAlignment="center"
+                    android:textSize="25dp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="95dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="225dp"
+            android:layout_marginTop="290dp"
+            android:elevation="30dp"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/WaterTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Water"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/WaterValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/WaterTextView"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="67"
+                    android:textAlignment="center"
+                    android:textSize="25dp" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="170dp"
+            android:elevation="30dp"
+            app:cardCornerRadius="20dp">
 
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="16dp">
-
-                <ImageView
-                    android:id="@+id/tempicon"
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-
-                    android:src="@drawable/temperatureicon" />
+                >
 
                 <TextView
                     android:id="@+id/TempTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/tempicon"
-                    android:text="Temp"
-                    android:textSize="25sp" />
+                    android:layout_marginLeft="12dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:text="Temperature"
+                    android:textAlignment="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/HumiTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Humidity"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/TempValue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/TempTextView"
-                    android:paddingLeft="33dp"
-                    tools:text="0"
-                    android:textSize="32sp" />
-
-
-                <ImageView
-                    android:id="@+id/HumidityImage"
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:layout_marginStart="190dp"
-                    android:paddingRight="32dp"
-                    android:src="@drawable/humidityicon" />
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="35"
+                    android:textAlignment="center"
+                    android:textSize="25dp" />
 
                 <TextView
-                    android:id="@+id/HumidityTextView"
+                    android:id="@+id/HumiValue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/HumidityImage"
-                    android:layout_alignParentRight="true"
-                    android:paddingRight="32dp"
-                    android:text="Humidity"
-                    android:textSize="25sp" />
-
-                <TextView
-                    android:id="@+id/HumidityValue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/HumidityTextView"
-                    android:layout_alignParentRight="true"
-                    android:paddingRight="32dp"
-                    tools:text="95"
-                    android:textSize="32sp" />
+                    android:layout_below="@+id/HumiTextView"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="67"
+                    android:textAlignment="center"
+                    android:textSize="25dp" />
 
 
             </RelativeLayout>
+
+
+
+
 
 
         </androidx.cardview.widget.CardView>
 
-
-        <!-- Second Row -->
         <androidx.cardview.widget.CardView
-            android:id="@+id/secondRow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/firstrow"
-            android:layout_gravity="fill"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="8dp"
-            app:cardUseCompatPadding="true">
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="16dp">
-
-                <ImageView
-                    android:id="@+id/waterlevelImage"
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:layout_alignParentLeft="true"
-                    android:src="@drawable/temperatureicon" />
-
-                <TextView
-                    android:id="@+id/waterlevelTextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/waterlevelImage"
-                    android:text="Temp"
-                    android:textSize="25sp" />
-
-                <TextView
-                    android:id="@+id/TankLevelValue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/waterlevelTextView"
-                    android:paddingLeft="33dp"
-                    tools:text="0"
-                    android:textSize="32sp" />
-
-
-                <ImageView
-                    android:id="@+id/TubeLevelImage"
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginStart="190dp"
-                    android:paddingRight="32dp"
-                    android:src="@drawable/humidityicon" />
-
-                <TextView
-                    android:id="@+id/TubeLevelText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/TubeLevelImage"
-                    android:layout_alignParentRight="true"
-                    android:paddingRight="32dp"
-                    android:text="Humidity"
-                    android:textSize="25sp" />
-
-                <TextView
-                    android:id="@+id/TubeLevelValue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/TubeLevelText"
-                    android:layout_alignParentRight="true"
-                    android:paddingRight="32dp"
-                    tools:text="95"
-                    android:textSize="32sp" />
-
-
-            </RelativeLayout>
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="410dp"
+            android:elevation="30dp"
+            app:cardCornerRadius="20dp">
 
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
+                <TextView
+                    android:id="@+id/PHTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:text="Ph"
+                    android:textAlignment="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/PHValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/PHTextView"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="67"
+                    android:textAlignment="center"
+                    android:textSize="25dp" />
 
             </RelativeLayout>
 
-
         </androidx.cardview.widget.CardView>
-
-        <!-- Third Row -->
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/thirdRow"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/secondRow"
-            android:padding="16dp"
-            app:cardCornerRadius="10dp">
+    </androidx.cardview.widget.CardView>
 
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:text="Light Status"
-                android:textSize="32sp" />
-
-            <TextView
-                android:layout_width="72dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:textSize="16sp"
-                tools:text="ON"
-                tools:visibility="visible" />
-
-        </androidx.cardview.widget.CardView>
-
-
-        <!--Card view button -->
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/wtrMngmnt"
-            android:clickable="true"
-            android:onClick="openScreen"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/thirdRow"
-            android:layout_marginTop="16dp"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="8dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:textSize="16sp"
-                android:text="Water Tank Management        >"
-                android:textStyle="bold"/>
-        </androidx.cardview.widget.CardView>
-
-    </RelativeLayout>
-
-
-</RelativeLayout>
+</LinearLayout>
