@@ -15,7 +15,7 @@
         android:layout_height="115dp"
         android:layout_gravity="center"
         android:layout_marginTop="130dp"
-        android:src="@drawable/applogoblack" />
+        android:src="@drawable/app_logo" />
 
 
     <com.google.android.material.card.MaterialCardView
