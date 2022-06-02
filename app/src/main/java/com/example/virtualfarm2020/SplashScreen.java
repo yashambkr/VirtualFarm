@@ -14,14 +14,11 @@ public class SplashScreen extends AppCompatActivity {
         setContentView(R.layout.activity_splash_screen);
 
         //will care for all posts
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
+        new Handler().postDelayed(() -> {
 
-                Intent i=new Intent(SplashScreen.this,LoginPage.class);
-                startActivity(i);
-                finish();
-            }
+            Intent i=new Intent(SplashScreen.this,LoginPage.class);
+            startActivity(i);
+            finish();
         }, 1600);
 
     }

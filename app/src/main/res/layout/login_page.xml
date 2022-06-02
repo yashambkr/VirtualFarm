@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,13 +8,15 @@
     tools:context="LoginPage"
     android:background="@drawable/ic_mask_group_3">
 
+
     <ImageView
         android:layout_width="170dp"
         android:layout_height="115dp"
         android:layout_gravity="center"
         android:layout_marginTop="130dp"
-        android:src="@drawable/applogoblack" />
-
+        android:src="@drawable/applogoblack"
+        android:contentDescription="LogoImage" />
+<!--
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/sys_idLayout"
         android:layout_marginStart="16dp"
@@ -33,7 +34,7 @@
             android:layout_height="wrap_content"
             />
 
-    </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>-->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/UsernameLayout"
         android:layout_marginStart="16dp"
@@ -45,7 +46,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/Username"
+            android:id="@+id/IdUsername"
             android:inputType="textPersonName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -67,7 +68,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/password"
+            android:id="@+id/IdPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
@@ -75,14 +76,34 @@
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:layout_width="128dp"
+        <Button
+            android:id="@+id/IdLoginBtn"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/black"
+            android:onClick="openDashboard"
+            android:text="Sign In"
+            android:textColor="#ffffff"
+            />
+
+        <TextView
+            android:id="@+id/IdNewUserReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not registered yet?"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"/>
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="16dp"
-        android:onClick="openDashboard"
-        android:text="Sign In"
-        android:textColor="#ffffff"
-        android:backgroundTint="@color/black"
-        android:id = "@+id/SigninBtn"/>
+        android:layout_below="@id/IdNewUserReg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progress_back"
+        android:visibility="gone" />
+
 </LinearLayout>
