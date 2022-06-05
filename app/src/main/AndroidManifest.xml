@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VirtualFarm2020">
         <activity
+            android:name=".GraphView"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false" />
+        <activity
             android:name=".CheckSystem"
             android:exported="false" />
         <activity

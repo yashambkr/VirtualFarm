@@ -3,6 +3,7 @@ package com.example.virtualfarm2020;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -20,6 +22,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class CheckSystem extends AppCompatActivity {
     private TextInputEditText sysIdEdt;
+    public String sysIdTxt;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference myRef = database.getReference("UsersData/");
     @Override
@@ -30,7 +33,7 @@ public class CheckSystem extends AppCompatActivity {
         sysIdEdt = findViewById(R.id.idSysemEdt);
         Button checkSysBtn = findViewById(R.id.idCheckSysBtn);
 
-        String sysIdTxt = sysIdEdt.getText().toString();
+         sysIdTxt = sysIdEdt.getText().toString();
         checkSysBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,22 +57,22 @@ public class CheckSystem extends AppCompatActivity {
                     @Override
                     public void onDataChange(DataSnapshot snapshot) {
                         if (snapshot.exists()) {
-                            Toast.makeText(CheckSystem.this,"True",Toast.LENGTH_LONG);
+                            Toast.makeText(CheckSystem.this, "True", Toast.LENGTH_LONG);
                             Log.d("firebase", "Child Exist");
+                            Intent intent = new Intent(CheckSystem.this,Dashboard.class);
+                            startActivity(intent);
+
                         }
                     }
 
                     @Override
                     public void onCancelled(@NonNull DatabaseError error) {
-                        Log.d("firebase", "Child Exist error: "+ error);
+                        Log.d("firebase", "Child Exist error: " + error);
                     }
                 });
 
             }
         });
-
-
-
 
 
     }
