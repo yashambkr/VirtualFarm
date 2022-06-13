@@ -2,9 +2,13 @@ package com.example.virtualfarm2020;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,8 +34,14 @@ public class Dashboard extends CheckSystem {
         NutrientSts= findViewById(R.id.idTdsStsValue);
         WaterTempSts= findViewById(R.id.idWaterTempStsValue);
         phSts= findViewById(R.id.isPhStsValue);
+        Button phDetail = findViewById(R.id.phDetailBtn);
+        phDetail.setOnClickListener(view -> {
+            Intent intent = new Intent(Dashboard.this,DataGraph.class);
+            startActivity(intent);
+        });
 
         getData();
+
 
     }
     private void getData() {

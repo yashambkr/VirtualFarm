@@ -232,9 +232,18 @@
             app:cardCornerRadius="20dp">
 
             <RelativeLayout
-                android:layout_width="106dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
+                <Button
+                    android:id="@+id/phDetailBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="190dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="34dp"
+                    android:backgroundTint="@color/black"
+                    android:text="See Details" />
                 <TextView
                     android:id="@+id/PHTextView"
                     android:layout_width="wrap_content"
@@ -259,6 +268,8 @@
                     android:hint="67"
                     android:textAlignment="center"
                     android:textSize="25dp" />
+
+
 
             </RelativeLayout>
 

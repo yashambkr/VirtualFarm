@@ -53,6 +53,7 @@ dependencies {
     // dependency for picasso for loading image from url
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.jjoe64:graphview:4.2.2'
 }
 
 apply plugin: 'com.android.application'
