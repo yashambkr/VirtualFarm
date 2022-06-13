@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".Dashboard">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="340dp"
+        android:layout_height="640dp"
+        android:elevation="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#BAEFD8">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:elevation="30dp"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:id="@+id/idSysIdTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID: System101"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="220dp"
+            android:elevation="30dp"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/TempTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:text="Temperature"
+                    android:textAlignment="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/HumiTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Humidity"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/idTempStsValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TempTextView"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="35"
+                    android:textAlignment="center"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/idHumidityStsValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/HumiTextView"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="67"
+                    android:textAlignment="center"
+                    android:textSize="25dp" />
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="110dp"
+            android:elevation="30dp"
+            app:cardCornerRadius="20dp">
+            <TextView
+                android:id="@+id/LightStatusTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Light Status"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+                android:id="@+id/idLightStsValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="30dp"
+                android:hint="ON"
+                android:textSize="25dp"
+                >
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="190dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="330dp"
+            android:elevation="30dp"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/TDSTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Nutrients"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/idTdsStsValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TDSTextView"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="35"
+                    android:textAlignment="center"
+                    android:textSize="25dp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="95dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="225dp"
+            android:layout_marginTop="330dp"
+            android:elevation="30dp"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/WaterTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Water"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/idWaterTempStsValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/WaterTextView"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="67"
+                    android:textAlignment="center"
+                    android:textSize="25dp" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="450dp"
+            android:elevation="30dp"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/PHTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Ph"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/isPhStsValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/PHTextView"
+                    android:layout_marginLeft="64dp"
+                    android:layout_marginTop="-34dp"
+                    android:hint="67"
+                    android:textAlignment="center"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/phDetailBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="190dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="34dp"
+                    android:backgroundTint="@color/black"
+                    android:text="See Details" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

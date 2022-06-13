@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.virtualfarm2020">
+    package="com.example.virtualfarm2020" >
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -11,7 +11,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.VirtualFarm2020">
+        android:theme="@style/Theme.VirtualFarm2020" >
+        <activity
+            android:name=".DataGraph"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false" />
         <activity
             android:name=".CheckSystem"
             android:exported="false" />
@@ -27,7 +33,7 @@
             android:name=".SplashScreen"
             android:exported="true"
             android:screenOrientation="locked"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
