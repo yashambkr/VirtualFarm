@@ -31,10 +31,17 @@
         <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout/activity_data_graph.xml" value="0.2" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout/activity_graph.xml" value="0.1793478260869565" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout/activity_graph_view.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout/activity_main_dashboard.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout/activity_navigation.xml" value="0.19479166666666667" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout/activity_register.xml" value="0.264" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout/activity_splash_screen.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout/fragment_dashboard.xml" value="0.25" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout/fragment_login.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout/fragment_notifications.xml" value="0.19479166666666667" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout/login_page.xml" value="0.264" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/VirtualFarm1/app/src/main/res/layout-v21/activity_graph.xml" value="0.21014492753623187" />
         <entry key="..\:/VirtualFarm1/app/src/main/res/layout/activity_graph.xml" value="0.152" />
         <entry key="..\:/VirtualFarm1/app/src/main/res/layout/activity_main_dashboard.xml" value="0.152" />

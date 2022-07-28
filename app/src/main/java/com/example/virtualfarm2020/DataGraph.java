@@ -1,6 +1,5 @@
 package com.example.virtualfarm2020;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -15,7 +14,7 @@ import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
 
 public class DataGraph extends AppCompatActivity {
-    private DatabaseReference reference= FirebaseDatabase.getInstance().getReference().child("UsersData/temporary");
+    private DatabaseReference reference= FirebaseDatabase.getInstance().getReference().child("UsersData/System101/SensorData");
 
     GraphView graphView;
     LineGraphSeries series;

@@ -75,7 +75,7 @@ public class LoginPage extends AppCompatActivity {
                             loadingPB.setVisibility(View.GONE);
                             Toast.makeText(LoginPage.this, "Login Successful..", Toast.LENGTH_SHORT).show();
                             // on below line we are opening our mainactivity.
-                            Intent i = new Intent(LoginPage.this, CheckSystem.class);
+                            Intent i = new Intent(LoginPage.this, MainActivity.class);
                             startActivity(i);
                             finish();
                         } else {
@@ -98,7 +98,7 @@ public class LoginPage extends AppCompatActivity {
         if (user != null) {
             // if the user is not null then we are
             // opening a main activity on below line.
-            Intent i = new Intent(LoginPage.this, CheckSystem.class);
+            Intent i = new Intent(LoginPage.this, MainActivity.class);
             startActivity(i);
             this.finish();
         }
