@@ -26,6 +26,7 @@
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/VirtualFarm2021/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/drawable/progress_back.xml" value="0.2365" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout-v21/activity_dashboard.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout/activity_atmosphere_control.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout/activity_check_system.xml" value="0.264" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout/activity_dashboard.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout/activity_data_graph.xml" value="0.2" />
@@ -36,10 +37,15 @@
         <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout/activity_navigation.xml" value="0.19479166666666667" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout/activity_register.xml" value="0.264" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout/activity_splash_screen.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout/activity_tank_control.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout/fragment_atmosphere_control.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout/fragment_dashboard.xml" value="0.25" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout/fragment_info.xml" value="0.1" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout/fragment_login.xml" value="0.18072916666666666" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout/fragment_notifications.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout/fragment_tank_control.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout/fragment_user.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/layout/login_page.xml" value="0.264" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/VirtualFarm/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/VirtualFarm1/app/src/main/res/layout-v21/activity_graph.xml" value="0.21014492753623187" />

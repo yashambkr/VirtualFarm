@@ -1,14 +1,250 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ui.dashboard.AtmosphereControlFragment">
+
+<TextView
+    android:id="@+id/text_dashboard"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.dashboard.AtmosphereControlFragment">
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="18dp"
+    android:layout_marginEnd="8dp"
+    android:textAlignment="center"
+    android:textSize="20sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardView"
+    android:layout_width="340dp"
+    android:layout_height="640dp"
+    android:layout_marginBottom="32dp"
+    android:elevation="20dp"
+    app:cardBackgroundColor="#BAEFD8"
+    app:cardCornerRadius="20dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
 
-</FrameLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:elevation="30dp"
+        app:cardCornerRadius="20dp">
+
+        <TextView
+            android:id="@+id/idSysIdTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:text="Atmosphere Control"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"></TextView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="110dp"
+        android:elevation="30dp"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TempTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:text="Temperature"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/HumiTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="10dp"
+                android:text="Humidity"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idTempStsValue"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TempTextView"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="8dp"
+                android:hint="29 °C"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/idHumidityStsValue"
+                android:layout_width="101dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/HumiTextView"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="8dp"
+                android:hint="16 RH"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="220dp"
+        android:elevation="30dp"
+        app:cardCornerRadius="20dp">
+
+        <TextView
+            android:id="@+id/LightStatusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="30dp"
+            android:text="Grow Light Status"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/idLightStsValue"
+            android:layout_width="59dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="30dp"
+            android:hint="ON"
+            android:textSize="25dp">
+
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="330dp"
+        android:elevation="30dp"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/SetLightTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:text="Set Light Time (hr)"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/SetLightEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="55dp"
+                android:layout_marginRight="10dp"
+                android:ems="5"
+                android:inputType="textPersonName"
+                android:text="12 hr" />
+
+            <Button
+                android:id="@+id/SetLightBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="55dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/black"
+                android:text="Set Time" />
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="460dp"
+        android:elevation="30dp"
+        app:cardCornerRadius="20dp">
+
+        <TextView
+            android:id="@+id/FanStatusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="30dp"
+            android:text="Fans Status"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/idFanStsValue"
+            android:layout_width="59dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="30dp"
+            android:hint="ON"
+            android:textSize="25dp">
+
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

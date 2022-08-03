@@ -1,14 +1,318 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.dashboard.TankControlFragment">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ui.dashboard.TankControlFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardView"
+    android:layout_width="340dp"
+    android:layout_height="640dp"
+    android:layout_marginBottom="32dp"
+    android:elevation="20dp"
+    app:cardBackgroundColor="#BAEFD8"
+    app:cardCornerRadius="20dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
 
-</FrameLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:elevation="30dp"
+        app:cardCornerRadius="20dp">
+
+        <TextView
+            android:id="@+id/idSysIdTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:text="NutrientTank Control"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"></TextView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="110dp"
+        android:elevation="30dp"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/WaterPHTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:text="Water pH"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idWaterPHStsValue"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/WaterPHTextView"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="8dp"
+                android:hint="7"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/WaterTDSTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="10dp"
+                android:text="Water TDS"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/idWaterTDSStsValue"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/WaterTDSTextView"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="8dp"
+                android:hint="800 ppm"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="220dp"
+        android:elevation="30dp"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/WaterLevelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:text="Watr Level"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idWaterLevelStsValue"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/WaterLevelTextView"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="8dp"
+                android:hint="30 L"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/WaterTempTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="10dp"
+                android:text="Water Temp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/idWaterTempStsValue"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/WaterTempTextView"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="8dp"
+                android:hint="28 °C"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="330dp"
+        android:elevation="30dp"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/SetTDSTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:text="Set TDS (100 - 1800) ppm"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="23dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/SetTDSEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="55dp"
+                android:layout_marginRight="10dp"
+                android:ems="5"
+                android:inputType="textPersonName"
+                android:text="400 ppm" />
+
+            <Button
+                android:id="@+id/SetTDSBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="55dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/black"
+                android:text="Set TDS" />
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="460dp"
+        android:elevation="30dp"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/SetPHTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:text="Set pH (0 - 14)"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="23dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/SetPHEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="55dp"
+                android:layout_marginRight="10dp"
+                android:ems="5"
+                android:inputType="textPersonName"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/SetPHBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/black"
+                android:text="Set TDS" />
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="590dp"
+        android:elevation="30dp"
+        app:cardCornerRadius="20dp">
+
+        <TextView
+            android:id="@+id/FanStatusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:text="Nutrient Management System"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -22,8 +23,8 @@ public class InfoFragment extends Fragment {
         binding = FragmentInfoBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
-        textView.setText("Soon will provide learning material for Hydroponics!!");
+        final TextView textView = binding.textView;
+        final ImageView imageView = binding.imageView;
         return root;
     }
 

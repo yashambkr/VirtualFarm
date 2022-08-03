@@ -6,17 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.InfoFragment">
 
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="408dp"
+        android:layout_height="277dp"
+        android:src="@drawable/infoimag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="TODO" />
+
     <TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
+        android:id="@+id/textView"
+        android:layout_width="388dp"
+        android:layout_height="428dp"
+        android:text="Hydroponics is a method of growing plants without soil.
+You can grow hydroponically all year long.
+Hydroponics uses less water than traditional soil-based systems.
+Hydroponic growing allows for faster growth and higher yields than traditional soil-based growing systems.
+To grow hydroponically, you need plants, a container, water, a way to anchor the plants, nutrients and a light source.
+It is possible to grow vegetables hydroponically both outdoors and indoors. If growing indoors, artificial lighting will help faster growth."
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.384" />
 </androidx.constraintlayout.widget.ConstraintLayout>
